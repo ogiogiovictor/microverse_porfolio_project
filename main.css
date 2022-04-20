@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /******************* HEADER SECTION WITH NAVIGATION LIST *************************/
@@ -38,10 +39,15 @@
   font-weight: bolder;
 }
 
+.bar-bar .icon{
+  display: none;
+}
+
 /******************* MAIN SECTION AREA *************************/
 .main-section-area {
   height: 500px;
   background-image: url("images/Header\ bg.svg");
+ background-size: cover;
 }
 
 .main-slide {
@@ -74,8 +80,8 @@
 }
 
 .social-media span img {
-  width: 20px;
-  height: 16px;
+  width: 21px;
+  height: 20px;
   padding-top: 10px;
   padding-right: 10px;
 }
@@ -92,4 +98,21 @@ ul {
 li {
   display: inline-block;
   padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-header {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .bar-bar .icon{
+    display: inline;
+  }
+  .bar-bar ul{
+    display: none;
+  }
 }
