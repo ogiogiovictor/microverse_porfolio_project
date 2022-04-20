@@ -39,7 +39,7 @@
   font-weight: bolder;
 }
 
-.bar-bar .icon{
+.bar-bar .icon {
   display: none;
 }
 
@@ -47,7 +47,7 @@
 .main-section-area {
   height: 500px;
   background-image: url("images/Header\ bg.svg");
- background-size: cover;
+  background-size: cover;
 }
 
 .main-slide {
@@ -105,14 +105,17 @@ li {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .main-header {
     margin-left: 5px;
     margin-right: 5px;
   }
-  .bar-bar .icon{
+
+  .bar-bar .icon {
     display: inline;
   }
-  .bar-bar ul{
+
+  .bar-bar ul {
     display: none;
   }
 }
