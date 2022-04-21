@@ -2,11 +2,13 @@
 Microverse Porfolio Project
 This project is a portfolio project design
 
+# About Project
+The project is a portfolio project about a Software developer and is products, Its built with latest 
+CSS technologies like flexbox.
 
-# Built With
-- Major language
+# Technologies Used
 - HTML
-- CSS
+- CSS (Flexbox)
 
 # Getting Started
 To get a local copy up and running follw these simple example steps:

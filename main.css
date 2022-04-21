@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: var(--font);
+}
+
 /******************* HEADER SECTION WITH NAVIGATION LIST *************************/
 .main-header {
   display: flex;
@@ -16,7 +24,7 @@
 }
 
 .main-header .Logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -25,7 +33,7 @@
 }
 
 .bar-bar ul li a {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -33,6 +41,10 @@
   color: #344563;
   text-decoration: none;
   cursor: pointer;
+}
+
+.main-header .Logo a {
+  text-decoration: none;
 }
 
 .bar-bar ul li a:hover {
@@ -65,30 +77,18 @@
   font-size: 20px;
   line-height: 28px;
   font-style: normal;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font);
   color: #344563;
   margin: 12px 0;
 }
 
 .connect {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-}
-
-.social-media span img {
-  width: 21px;
-  height: 20px;
-  padding-top: 10px;
-  padding-right: 10px;
-}
-
-.main-section-area h1 {
-  font-size: 48px;
-  line-height: 60px;
 }
 
 ul {
@@ -98,6 +98,28 @@ ul {
 li {
   display: inline-block;
   padding-left: 10px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media img {
+  width: 19.99px;
+  height: 19.99px;
+}
+
+.social-media li {
+  padding-top: 10px;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.main-section-area h1 {
+  font-size: 48px;
+  line-height: 60px;
 }
 
 @media only screen and (max-width: 600px) {
