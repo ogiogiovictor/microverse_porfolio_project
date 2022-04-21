@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+/******************* HEADER SECTION WITH NAVIGATION LIST *************************/
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 20px;
+}
+
+.main-header .Logo {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+}
+
+.bar-bar ul li a {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-header .Logo a {
+  text-decoration: none;
+}
+
+.bar-bar ul li a:hover {
+  font-weight: bolder;
+}
+
+.bar-bar .icon {
+  display: none;
+}
+
+/******************* MAIN SECTION AREA *************************/
+.main-section-area {
+  height: 500px;
+  background-image: url("images/Header\ bg.svg");
+  background-size: cover;
+}
+
+.main-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-left: 260px;
+  padding-right: 260px;
+}
+
+.slide-text {
+  display: flex;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+  font-family: var(--font);
+  color: #344563;
+  margin: 12px 0;
+}
+
+.connect {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media img {
+  width: 19.99px;
+  height: 19.99px;
+}
+
+.social-media li {
+  padding-top: 10px;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.main-section-area h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-header {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .bar-bar .icon {
+    display: inline;
+  }
+
+  .bar-bar ul {
+    display: none;
+  }
+}

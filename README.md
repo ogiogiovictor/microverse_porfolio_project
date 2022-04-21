@@ -1,73 +1,38 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Microverse_Hello_Project
+Microverse Porfolio Project
+This project is a portfolio project design
 
-# Project Name
+# About Project
+The project is a portfolio project about a Software developer and is products, Its built with latest 
+CSS technologies like flexbox.
 
-> Description the project.
+# Technologies Used
+- HTML
+- CSS (Flexbox)
 
+# Getting Started
+To get a local copy up and running follw these simple example steps:
 
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Select the link with the code on the https code table in the repo
+- Open a Terminal and write the command: git clone https://github.com/ogiogiovictor/microverse_porfolio.git
+- cd into the directory
+- Open the index page in a browser.
 
 
-To get a local copy up and running follow these simple example steps.
+# Authors
+- GitHub: @ogiogiovictor
+-Twitter: [Ogiogio Victor](https://twitter.com/a0df623fb9d9482)
+-LinkedIn:  [Ogiogio Victor](https://www.linkedin.com/in/ogiogio-victor-a096a0181/)
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
+# 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the issues page.
 
-## Show your support
+# Show your support
+Kindly give a :hearts: if you like this.
 
-Give a ⭐️ if you like this project!
+# Acknowledgement
+- I expressed my gratitude for everyone.
 
-## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
