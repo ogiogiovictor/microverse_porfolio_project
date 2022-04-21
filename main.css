@@ -12,6 +12,9 @@
 
 h1 {
   font-family: var(--font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
 }
 
 /******************* HEADER SECTION WITH NAVIGATION LIST *************************/
