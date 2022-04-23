@@ -70,11 +70,10 @@ header {
 
 /******************* MAIN SECTION AREA *************************/
 .main-section-area {
-  height: 550px;
+  height: 500px;
   background-image: url("images/Header\ bg.svg");
   background-size: cover;
   background-color: var(--bgwhite);
-  border-bottom-left-radius: 80px;
 }
 
 .main-slide {
@@ -84,10 +83,6 @@ header {
   justify-content: center;
   padding-left: 260px;
   padding-right: 260px;
-}
-
-.main-slide h1 {
-  color: #172b4d;
 }
 
 .slide-text {
@@ -141,31 +136,33 @@ li {
   line-height: 60px;
 }
 
-/******************** WORK AREA DESIGN ***************************/
-
-.main-grid {
+/******************** WORK AREA DESIGN **********************************/
+.grid-container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 3.4rem;
   justify-content: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding-top: 80px;
+  gap: 100px;
+}
+
+.grid-item {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 24px;
+  padding: 30px;
 }
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  background: #fff;
-  border: 2px solid #dfe1e6;
-  border-radius: 24px;
-  width: 1000px;
-  padding: 20px;
-  column-gap: 25px;
+  gap: 10px;
+
+  /* flex-wrap: wrap; */
 }
 
-.flex-items img {
-  width: 544px;
-}
+/* .flex-item{} */
 
-.flex-items h2 {
+.flex-item h2 {
   font-family: var(--font);
   font-style: normal;
   font-weight: 700;
@@ -173,7 +170,11 @@ li {
   line-height: 52px;
 }
 
-.flex-items .subtitle {
+.canopy {
+  margin-right: 10px;
+}
+
+.flex-item .canopy {
   font-family: var(--font);
   font-style: normal;
   font-weight: 500;
@@ -182,7 +183,32 @@ li {
   color: #344563;
 }
 
-.flex-items .mid-list {
+.flex-item .border {
+  background: #c1c7d0;
+  border-radius: 40px;
+}
+
+.flex-item img {
+  width: 544px;
+  max-width: 100%;
+  height: auto;
+  padding-right: 20px;
+}
+
+.flex-item button {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: 1px solid #396df2;
+}
+
+.canoppy-others {
   font-family: var(--font);
   font-style: normal;
   font-weight: 400;
@@ -200,7 +226,7 @@ li {
   margin-right: 10px;
 }
 
-.flex-items .description {
+.fitem {
   font-family: var(--font);
   width: 400px;
   font-weight: 400;
@@ -210,28 +236,11 @@ li {
   margin-top: 20px;
 }
 
-.flex-items .list-stack {
-  padding-top: 30px;
+.list-stack {
+  padding-top: 20px;
 }
 
-.media li {
-  padding-top: 10px;
-  cursor: pointer;
-  padding-left: 0;
-  padding-right: 15px;
-}
-
-.tabs li {
-  padding: 10px;
-  display: block;
-  font-family: var(--font);
-  border-bottom: 1px solid gray;
-}
-
-.flex-items .list-stack li {
-  font-family: var(--font);
-  font-weight: 500;
-  font-size: 12px;
+.nopadding {
   padding-left: 0 !important;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -243,8 +252,7 @@ li {
   color: #6070ff;
 }
 
-.flex-items button {
-  font-family: var(--font);
+.btn {
   padding: 12px;
   height: 48px;
   left: 0;
@@ -254,88 +262,52 @@ li {
   margin-top: 50px;
   font-size: 17px !important;
   cursor: pointer;
-  color: #396df2;
-  font-weight: 500;
-  line-height: 24px;
-}
-
-.flex-item button {
-  font-family: var(--font);
-  padding: 12px;
-  height: 48px;
-  left: 0;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  background-color: transparent;
-  margin-top: 30px;
-  font-size: 17px !important;
-  cursor: pointer;
-  color: #396df2;
-  font-weight: 500;
-  line-height: 24px;
-}
-
-.flex-items button:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
-}
-
-.flex-items button:active {
-  background: #2230d2;
-  color: #fff;
 }
 
 .btn-primary {
-  background: #4053fc !important;
+  background-color: #4053fc !important;
   color: white !important;
-}
-
-.spacer {
-  margin-top: 40px;
 }
 
 /******************** END OF WORK AREA DESIGN ***************************/
 
-/******************** ABOUT ME  ***************************/
+/********************************** ABOUT SECTION *****************************/
 .main-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 1.4rem;
+  margin-top: 70px;
 }
 
-.main-about-container {
-  display: flex;
-  flex-direction: row;
+/* .about-container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 70px;
+} */
+.about-item {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-top-right-radius: 24px;
   width: 100%;
-  height: 100%;
-  background-color: #fff;
+  height: 700%;
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 70px;
   padding-bottom: 40px;
-  margin-top: 100px;
 }
 
-.item1 {
-  flex: 2;
+.about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
-.item2 {
-  flex: 3;
+.inner-container img {
+  width: 90px;
 }
 
-.main-about-container h2 {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #091e42;
-  margin: 12px 0;
+.flex-item .social-media li a img {
+  width: 35px;
 }
 
-.main-about-container p {
+.aitem {
   font-family: var(--font);
   width: 400px;
   font-weight: 400;
@@ -345,26 +317,11 @@ li {
   margin-top: 20px;
 }
 
-.main-about-container h3 {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-}
+/* ul {
+  list-style-type: none;
+} */
 
-.media {
-  display: flex;
-  flex-direction: row;
-}
-
-.media img {
-  width: 19.99px;
-  height: 19.99px;
-}
-
-.tabs {
+.tabls {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -372,7 +329,27 @@ li {
   width: 100vh;
 }
 
-/******************** END OF ABOUT ME  ***************************/
+.tabls li {
+  padding: 10px;
+}
+
+li.about-list {
+  display: block;
+  font-family: var(--font);
+  border-bottom: 1px solid gray;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.pull-right {
+  float: right;
+}
+
+/********************************** END OF ABOUT SECTION ***************************/
 
 @media only screen and (max-width: 600px) {
   .main-slide {
@@ -394,80 +371,25 @@ li {
   }
 
   .flex-container {
-    width: 327px;
+    flex-direction: column;
+
+    /* flex-wrap: wrap; */
+  }
+
+  .about-container {
     flex-direction: column;
   }
 
-  .flex-items img {
-    width: 295px;
-    height: 220px;
+  .about-item {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .flex-items h2 {
-    font-weight: 700;
-    font-size: 32px;
-    width: 295px;
-  }
-
-  .flex-items .subtitle {
-    font-weight: 600;
-    font-size: 13px;
-    width: 55px;
-  }
-
-  .flex-items .mid-list {
-    font-size: 13px;
-    width: 88px;
-  }
-
-  .flex-items .description {
-    font-weight: 400;
-    font-size: 15px;
-    width: 295px;
-  }
-
-  .tabs li {
-    padding: 10px;
-    display: block;
-    font-family: var(--font);
-    border-bottom: 1px solid gray;
-  }
-
-  .flex-items .list-stack li {
-    font-size: 12px;
-    width: 65px;
-  }
-
-  .flex-items button {
-    font-weight: 500;
-    font-size: 13px !important;
-    width: 100px;
-    margin-bottom: 10px;
-  }
-
-  .main-about-container {
-    flex-direction: column;
-    padding: 20px;
-    padding-top: 40px;
-    margin-top: 30px;
-    border-top-right-radius: 100px;
-  }
-
-  .inner-container img {
-    width: 100px;
-    padding: 15px;
-  }
-
-  .main-about-container p {
+  .aitem {
     width: 100%;
   }
 
-  .tabs {
+  .tabls {
     width: 100%;
-  }
-
-  .flex-item button {
-    font-size: 12px !important;
-    font-weight: 300;
   }
 }
