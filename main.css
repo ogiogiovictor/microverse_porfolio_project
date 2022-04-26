@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 :root {
-  --font: 'Poppins', sans-serif;
+  --font: "Poppins", sans-serif;
   --bgwhite: #fff;
   --bgcontact: #6070ff;
 }
@@ -396,10 +396,7 @@ li {
   width: 100vh;
 }
 
-
-
 /********************* ABOUT SECTION PAGE *************************/
-
 .contact_bg {
   /* display: grid;
   grid-template-columns: 1fr; */
@@ -463,8 +460,6 @@ li {
   background-color: #2230d2;
   color: #fff;
 }
-
-
 
 /*********************** END OF ABOUT SECTION **********************/
 
