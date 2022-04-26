@@ -460,12 +460,16 @@ li {
 }
 
 #form-btn:hover {
-  background-color: #091e42;
+  background-color: #6070ff;
+  color:#ffffff
 }
 
 #form-btn:active {
   background-color: #2230d2;
+  color:#ffffff
 }
+
+
 
 /*********************** END OF ABOUT SECTION **********************/
 
