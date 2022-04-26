@@ -458,6 +458,15 @@ li {
   border-radius: 8px;
   cursor: pointer;
 }
+
+#form-btn:hover {
+  background-color: #091e42;
+}
+
+#form-btn:active {
+  background-color: #2230d2;
+}
+
 /*********************** END OF ABOUT SECTION **********************/
 
 /******************** END OF ABOUT ME  ***************************/
