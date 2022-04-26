@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,7 @@
 :root {
   --font: 'Poppins', sans-serif;
   --bgwhite: #fff;
-  --bgcontact: #6070FF;
+  --bgcontact: #6070ff;
 }
 
 body {
@@ -213,13 +212,45 @@ li {
   float: left;
 }
 
-.container-float{
-  position:relative;
+.container-float {
+  position: relative;
+}
+
+.flex-item button {
+  font-family: var(--font);
+  padding: 12px;
+  height: 48px;
+  left: 0;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: transparent;
+  margin-top: 30px;
+  font-size: 17px !important;
+  cursor: pointer;
+  color: #396df2;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.flex-contact ul li button {
+  margin-top: 27px;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  width: 140px;
+  height: 48px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .flex-items .list-stack {
   padding-top: 30px;
-  float:left;
+  float: left;
 }
 
 .media li {
@@ -251,6 +282,7 @@ li {
   color: #6070ff;
 }
 
+/*
 .flex-items button {
   font-family: var(--font);
   padding: 12px;
@@ -265,23 +297,7 @@ li {
   color: #396df2;
   font-weight: 500;
   line-height: 24px;
-}
-
-.flex-item button {
-  font-family: var(--font);
-  padding: 12px;
-  height: 48px;
-  left: 0;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  background-color: transparent;
-  margin-top: 30px;
-  font-size: 17px !important;
-  cursor: pointer;
-  color: #396df2;
-  font-weight: 500;
-  line-height: 24px;
-}
+} */
 
 .flex-items button:hover {
   background: #6070ff;
@@ -394,18 +410,18 @@ li {
   border-top-left-radius: 80px;
 }
 
-.flex-contact{
+.flex-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.flex-contact h2{
-  margin-top:  142px;
+.flex-contact h2 {
+  margin-top: 142px;
   font-family: var(--font);
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   font-size: 40px;
 }
 
@@ -413,60 +429,39 @@ li {
   margin-top: 12px;
   width: 569px;
   font-family: var(--font);
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
 }
 
-.flex-contact ul li{
-  display: block;
-}
-
 .flex-contact ul li input {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 2px;
-  margin-top:27px;
+  margin-top: 27px;
   width: 447px;
   height: 48px;
   padding: 10px;
-
 }
 
 .flex-contact ul li textarea {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 2px;
   margin-top: 27px;
   padding: 10px;
-}
-
-.flex-contact ul li button{
-  margin-top: 27px;
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #6070FF;
-  width: 140px;
-  height: 48px;
-  padding: 12px 16px;
-  border-radius: 8px;
-  cursor: pointer;
 }
 
 #form-btn:hover {
   background-color: #6070ff;
-  color:#ffffff
+  color: #fff;
 }
 
 #form-btn:active {
   background-color: #2230d2;
-  color:#ffffff
+  color: #fff;
 }
 
 
@@ -534,6 +529,10 @@ li {
     border-bottom: 1px solid gray;
   }
 
+  .flex-contact ul li {
+    display: block;
+  }
+
   .flex-items .list-stack li {
     font-size: 12px;
     width: 65px;
@@ -573,19 +572,19 @@ li {
   }
 
   /************* CONTACT MOBILE SECTION *****************/
-  .contact_bg {
-    
-  }
   .flex-contact p {
     width: 327px;
   }
-  .flex-contact h2{
+
+  .flex-contact h2 {
     font-size: 40px;
   }
+
   .flex-contact ul li input {
     border-radius: 8px;
     width: 327px !important;
   }
+
   .flex-contact ul li textarea {
     width: 327px !important;
     border-radius: 8px;
@@ -595,9 +594,6 @@ li {
     width: 108px !important;
     border-radius: 8px;
     font-size: 11px;
-    width: 108px;
-    padding: 12px 16px;
-    border-radius: 8px;
     cursor: pointer;
     padding: 12px 16px;
     font-weight: 500;
