@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: 'Poppins', sans-serif;
+  --bgwhite: #fff;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+/******************* HEADER SECTION WITH NAVIGATION LIST *************************/
+header {
+  background-color: var(--bgwhite);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 20px;
+  background-color: var(--bgwhite);
+}
+
+.main-header .Logo {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+}
+
+.bar-bar ul li a {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-header .Logo a {
+  text-decoration: none;
+}
+
+.bar-bar ul li a:hover {
+  font-weight: bolder;
+}
+
+.bar-bar .icon {
+  display: none;
+}
+
+/******************* MAIN SECTION AREA *************************/
+.main-section-area {
+  height: 500px;
+  background-image: url("images/Header\ bg.svg");
+  background-size: cover;
+  background-color: var(--bgwhite);
+}
+
+.main-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-left: 260px;
+  padding-right: 260px;
+}
+
+.slide-text {
+  display: flex;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+  font-family: var(--font);
+  color: #344563;
+  margin: 12px 0;
+}
+
+.connect {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media img {
+  width: 19.99px;
+  height: 19.99px;
+}
+
+.social-media li {
+  padding-top: 10px;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.main-section-area h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+/******************** WORK AREA DESIGN **********************************/
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding-top: 80px;
+  gap: 100px;
+}
+
+.grid-item {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  /* flex-wrap: wrap; */
+}
+
+/* .flex-item{} */
+
+.flex-item h2 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.canopy {
+  margin-right: 10px;
+}
+
+.flex-item .canopy {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.flex-item .border {
+  background: #c1c7d0;
+  border-radius: 40px;
+}
+
+.flex-item img {
+  width: 544px;
+  max-width: 100%;
+  height: auto;
+  padding-right: 20px;
+}
+
+.flex-item button {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: 1px solid #396df2;
+}
+
+.canoppy-others {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.fitem {
+  font-family: var(--font);
+  width: 400px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 20px;
+}
+
+.list-stack {
+  padding-top: 20px;
+}
+
+.nopadding {
+  padding-left: 0 !important;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 80px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  text-align: center;
+  color: #6070ff;
+}
+
+.btn {
+  padding: 12px;
+  height: 48px;
+  left: 0;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: transparent;
+  margin-top: 50px;
+  font-size: 17px !important;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4053fc !important;
+  color: white !important;
+}
+
+/******************** END OF WORK AREA DESIGN ***************************/
+
+/********************************** ABOUT SECTION *****************************/
+.main-container {
+  margin-top: 70px;
+}
+
+/* .about-container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 70px;
+} */
+.about-item {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-top-right-radius: 24px;
+  width: 100%;
+  height: 700%;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.inner-container img {
+  width: 90px;
+}
+
+.flex-item .social-media li a img {
+  width: 35px;
+}
+
+.aitem {
+  font-family: var(--font);
+  width: 400px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 20px;
+}
+
+/* ul {
+  list-style-type: none;
+} */
+
+.tabls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100vh;
+}
+
+.tabls li {
+  padding: 10px;
+}
+
+li.about-list {
+  display: block;
+  font-family: var(--font);
+  border-bottom: 1px solid gray;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.pull-right {
+  float: right;
+}
+
+/********************************** END OF ABOUT SECTION ***************************/
+
+@media only screen and (max-width: 600px) {
+  .main-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-header {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .bar-bar .icon {
+    display: inline;
+  }
+
+  .bar-bar ul {
+    display: none;
+  }
+
+  .flex-container {
+    flex-direction: column;
+
+    /* flex-wrap: wrap; */
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .aitem {
+    width: 100%;
+  }
+
+  .tabls {
+    width: 100%;
+  }
+}
