@@ -194,11 +194,11 @@
           <div class="flex-contact">
               <h2>Contact me</h2>
               <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-                <form>
+                <form action="" method="post">
                   <ul>
-                    <li><input type="text" name="fullname" max="30" placeholder="Enter your name"/></li>
-                    <li><input type="email" name="fullname" placeholder="Enter your Email"/></li>
-                    <li><textarea cols="55" rows="15" placeholder="write your message" name="message"></textarea></li>
+                    <li><input type="text" name="fullname" max="30" placeholder="Enter your name" required/></li>
+                    <li><input type="email" name="email" placeholder="Enter your Email" required/></li>
+                    <li><textarea cols="55" rows="15" placeholder="write your message" name="message" required maxlength="500"></textarea></li>
                     <li><button type="button" >Get in touch</button></li>
 
                   </ul>
