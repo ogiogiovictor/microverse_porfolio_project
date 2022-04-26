@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@
 :root {
   --font: 'Poppins', sans-serif;
   --bgwhite: #fff;
+  --bgcontact: #6070FF;
 }
 
 body {
@@ -208,10 +210,16 @@ li {
   line-height: 24px;
   color: #344563;
   margin-top: 20px;
+  float: left;
+}
+
+.container-float{
+  position:relative;
 }
 
 .flex-items .list-stack {
   padding-top: 30px;
+  float:left;
 }
 
 .media li {
@@ -372,6 +380,86 @@ li {
   width: 100vh;
 }
 
+
+
+/********************* ABOUT SECTION PAGE *************************/
+
+.contact_bg {
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  height: 846px;
+  background-image: url("images/Header bg.svg");
+  background-size: cover;
+  background-color: var(--bgcontact);
+  border-top-left-radius: 80px;
+}
+
+.flex-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-contact h2{
+  margin-top:  142px;
+  font-family: var(--font);
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.flex-contact p {
+  margin-top: 12px;
+  width: 569px;
+  font-family: var(--font);
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.flex-contact ul li{
+  display: block;
+}
+
+.flex-contact ul li input {
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 2px;
+  margin-top:27px;
+  width: 447px;
+  height: 48px;
+  padding: 10px;
+
+}
+
+.flex-contact ul li textarea {
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 2px;
+  margin-top: 27px;
+  padding: 10px;
+}
+
+.flex-contact ul li button{
+  margin-top: 27px;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #6070FF;
+  width: 140px;
+  height: 48px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/*********************** END OF ABOUT SECTION **********************/
+
 /******************** END OF ABOUT ME  ***************************/
 
 @media only screen and (max-width: 600px) {
@@ -470,4 +558,44 @@ li {
     font-size: 12px !important;
     font-weight: 300;
   }
+
+  /************* CONTACT MOBILE SECTION *****************/
+  .contact_bg {
+    
+  }
+  .flex-contact p {
+    width: 327px;
+  }
+  .flex-contact h2{
+    font-size: 40px;
+  }
+  .flex-contact ul li input {
+    border-radius: 8px;
+    width: 327px !important;
+  }
+  .flex-contact ul li textarea {
+    width: 327px !important;
+    border-radius: 8px;
+  }
+
+  .flex-contact ul li button {
+    width: 108px !important;
+    border-radius: 8px;
+    font-size: 11px;
+    width: 108px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px 16px;
+  }
+
+  .contact_bg {
+    height: 900px;
+    background-image: url("images/Header bg.svg");
+    background-size: cover;
+    background-color: var(--bgcontact);
+    border-top-left-radius: 80px;
+  }
+
+  /************* END OF MOBILE SECTION ******************/
 }
