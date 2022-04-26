@@ -20,14 +20,12 @@ To get a local copy up and running follw these simple example steps:
 
 
 # Authors
+
+👤 **Author1**
 - GitHub: @ogiogiovictor
 -Twitter: [Ogiogio Victor](https://twitter.com/a0df623fb9d9482)
 -LinkedIn:  [Ogiogio Victor](https://www.linkedin.com/in/ogiogio-victor-a096a0181/)
 
-👤 **Ulises Largaespada**
-
-- GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
-- Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
 
 # 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
