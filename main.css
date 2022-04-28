@@ -400,6 +400,7 @@ li {
 .contact-form-bg {
   background-color: white;
 }
+
 .contact_bg {
   /* display: grid;
   grid-template-columns: 1fr; */
@@ -407,7 +408,6 @@ li {
   background-image: url("images/Header bg.svg");
   background-color: var(--bgcontact);
   border-top-left-radius: 180px;
-
 }
 
 .flex-contact {
@@ -416,7 +416,6 @@ li {
   align-items: center;
   justify-content: center;
 }
-
 
 .flex-contact h2 {
   margin-top: 150px;
@@ -437,10 +436,9 @@ li {
   text-align: center;
 }
 
-.flex-contact form{
+.flex-contact form {
   width: 600px;
   text-align: center;
-
 }
 
 .flex-contact ul li input {
