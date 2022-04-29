@@ -510,6 +510,9 @@ button {
   transition-delay: 0.1s;
 }
 
+button:hover {
+  background-color: #3b4ef9e0;
+}
 
 /*********************** END OF ABOUT SECTION **********************/
 
