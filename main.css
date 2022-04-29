@@ -216,6 +216,16 @@ li {
   position: relative;
 } */
 
+button {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+button:hover {
+  background-color: #3b4ef9e0;
+}
+
 .flex-items button {
   font-family: var(--font);
   padding: 12px;
