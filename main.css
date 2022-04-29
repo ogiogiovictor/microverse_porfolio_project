@@ -503,6 +503,14 @@ li {
   margin-right: 10px;
 }
 
+
+button {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+
 /*********************** END OF ABOUT SECTION **********************/
 
 /******************** END OF ABOUT ME  ***************************/
