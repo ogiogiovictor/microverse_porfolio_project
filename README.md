@@ -18,6 +18,10 @@ To get a local copy up and running follw these simple example steps:
 - cd into the directory
 - Open the index page in a browser.
 
+# Website URL - Github Pages
+The Webpage is now deployed using github pages. See url link below:
+https://ogiogiovictor.github.io/microverse_porfolio_project/
+
 
 # Authors
 - GitHub: @ogiogiovictor
