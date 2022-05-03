@@ -15,13 +15,12 @@ CSS technologies like flexbox.
 # Getting Started
 To get a local copy up and running follw these simple example steps:
 
-`
-- Select the link with the code on the https code table in the repo
-- Open a Terminal and write the command: git clone https://github.com/ogiogiovictor/microverse_porfolio.git
-- $ cd into the directory
-- $ Open the index.html file in a browser.
-`
-
+```
+    - Select the link with the code on the https code table in the repo
+    - Open a Terminal and write the command: git clone https://github.com/ogiogiovictor/microverse_porfolio.git
+    - $ cd into the directory
+    - $ Open the index.html file in a browser.
+```
 
 # Website URL - Github Pages
 The Webpage is now deployed using github pages. See url link below:
