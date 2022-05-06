@@ -6,17 +6,21 @@ This project is a portfolio project design
 The project is a portfolio project about a Software developer and is products, Its built with latest 
 CSS technologies like flexbox.
 
-# Technologies Used
+# Built With 
 - HTML
-- CSS (Flexbox)
+- CSS (Flexbox | Grid System)
+- Linters: Webhint & Stylelint
+- Formspree
 
 # Getting Started
 To get a local copy up and running follw these simple example steps:
 
-- Select the link with the code on the https code table in the repo
-- Open a Terminal and write the command: git clone https://github.com/ogiogiovictor/microverse_porfolio.git
-- cd into the directory
-- Open the index page in a browser.
+```
+    - Select the link with the code on the https code table in the repo
+    - Open a Terminal and write the command: git clone https://github.com/ogiogiovictor/microverse_porfolio.git
+    - $ cd into the directory
+    - $ Open the index.html file in a browser.
+```
 
 # Website URL - Github Pages
 The Webpage is now deployed using github pages. See url link below:
