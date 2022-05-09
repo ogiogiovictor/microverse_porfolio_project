@@ -520,11 +520,51 @@ button:hover {
   font-weight: 500;
 }
 
+.mobile-links {
+  display:none;
+}
+
 /*********************** END OF ABOUT SECTION **********************/
 
 /******************** END OF ABOUT ME  ***************************/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width:460px) and (max-width:600px){
+/* @media only screen and (max-width: 600px) { */
+
+    /*----------open mobile link ---------------> */
+    .mobile-links {
+      display: block !important;
+      overflow: hidden;
+      background-color : #6070FF;
+      position: fixed;
+      top:0;
+      left:0;
+      height: 100%;
+      width: 100%;
+      padding-top:20px;
+    }
+    
+
+    .mobile-links ul li{
+      display: block;
+      padding: 10px;
+     }
+
+     .mobile-links ul li a{
+      text-decoration: none;
+      color:white;
+      font-family: var(--font);
+      font-weight: 500;
+     }
+     .fa-times{
+      float: right;
+      padding-right:100px;
+      padding-top:20px;
+      color:white;
+     }
+
+    
+
   .main-slide {
     padding-left: 20px;
     padding-right: 20px;
@@ -605,7 +645,8 @@ button:hover {
     padding-top: 40px;
     margin-top: 30px;
     border-top-right-radius: 100px;
-    width: 402px;
+    /* width: 402px; */
+    width: 100%;
   }
 
   .main-about-container p {
@@ -685,10 +726,7 @@ button:hover {
     width: 62px;
   }
 
-  /* .inner-container img {
-    width: 100px;
-    padding: 15px;
-  } */
+ 
 
   /************* END OF MOBILE SECTION ******************/
 }
