@@ -534,7 +534,10 @@ button:hover {
 
     /*----------open mobile link ---------------> */
     .mobile-links {
+<<<<<<< HEAD
        /* display: block !important;   */
+=======
+>>>>>>> 4665eeb008664edb23513cbfe95b4e8fc690f60a
       overflow: hidden;
       background-color : #6070FF;
       opacity: 0.9;
