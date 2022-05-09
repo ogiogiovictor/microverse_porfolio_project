@@ -1,3 +1,4 @@
+
 const menuItem = document.querySelector('.mobile-links');
 const closeMobileItems = document.querySelectorAll('.closeMenu');
 const displayMobileMenu = () => {
@@ -8,3 +9,5 @@ const closeMobileMenu = () => {
 };
 document.querySelector('.openMenu').addEventListener('click', displayMobileMenu);
 closeMobileItems.forEach(((element) => element.addEventListener('click', closeMobileMenu)));
+
+

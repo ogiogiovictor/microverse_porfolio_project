@@ -524,6 +524,7 @@ button:hover {
   display:none;
 }
 
+
 /*********************** END OF ABOUT SECTION **********************/
 
 /******************** END OF ABOUT ME  ***************************/
@@ -533,9 +534,10 @@ button:hover {
 
     /*----------open mobile link ---------------> */
     .mobile-links {
-      display: block !important;
+       /* display: block !important;   */
       overflow: hidden;
       background-color : #6070FF;
+      opacity: 0.9;
       position: fixed;
       top:0;
       left:0;
