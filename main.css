@@ -521,54 +521,53 @@ button:hover {
 }
 
 .mobile-links {
-  display:none;
+  display: none;
 }
-
 
 /*********************** END OF ABOUT SECTION **********************/
 
-/******************** END OF ABOUT ME  ***************************/
+@media only screen and (min-width: 460px) and (max-width: 600px) {
+  /* @media only screen and (max-width: 600px) { */
+  /* ----------open mobile link ---------------> */
+  .mobile-links {
+    overflow: hidden;
+    background-color: #6070ff;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+  }
 
-@media only screen and (min-width:460px) and (max-width:600px){
-/* @media only screen and (max-width: 600px) { */
+  .tabs li {
+    padding: 10px;
+    display: block;
+    font-family: var(--font);
+    border-bottom: 1px solid gray;
+  }
 
-    /*----------open mobile link ---------------> */
-    .mobile-links {
-<<<<<<< HEAD
-       /* display: block !important;   */
-=======
->>>>>>> 4665eeb008664edb23513cbfe95b4e8fc690f60a
-      overflow: hidden;
-      background-color : #6070FF;
-      opacity: 0.9;
-      position: fixed;
-      top:0;
-      left:0;
-      height: 100%;
-      width: 100%;
-      padding-top:20px;
-    }
-    
+  .mobile-links ul li {
+    display: block;
+    padding: 10px;
+  }
 
-    .mobile-links ul li{
-      display: block;
-      padding: 10px;
-     }
+  .mobile-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 32px;
+    cursor: pointer;
+  }
 
-     .mobile-links ul li a{
-      text-decoration: none;
-      color:white;
-      font-family: var(--font);
-      font-weight: 500;
-     }
-     .fa-times{
-      float: right;
-      padding-right:100px;
-      padding-top:20px;
-      color:white;
-     }
-
-    
+  .fa-times {
+    float: right;
+    padding-right: 100px;
+    padding-top: 20px;
+    color: white;
+  }
 
   .main-slide {
     padding-left: 20px;
@@ -621,13 +620,6 @@ button:hover {
     width: 295px;
   }
 
-  .tabs li {
-    padding: 10px;
-    display: block;
-    font-family: var(--font);
-    border-bottom: 1px solid gray;
-  }
-
   .flex-contact ul li {
     display: block;
   }
@@ -650,6 +642,7 @@ button:hover {
     padding-top: 40px;
     margin-top: 30px;
     border-top-right-radius: 100px;
+
     /* width: 402px; */
     width: 100%;
   }
@@ -730,8 +723,6 @@ button:hover {
     height: 62px;
     width: 62px;
   }
-
- 
 
   /************* END OF MOBILE SECTION ******************/
 }
