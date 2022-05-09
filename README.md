@@ -37,6 +37,12 @@ The Webpage is now deployed using github pages. See url link below:
 - GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
 - Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
 
+👤 **David Verde**
+
+GitHub: https://github.com/Unyielding1
+Twitter: https://twitter.com/UnyieldingOne
+LinkedIn: https://www.linkedin.com/in/david-verde-3349b114b/
+
 
 # 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
