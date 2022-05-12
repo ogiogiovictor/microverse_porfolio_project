@@ -18,6 +18,14 @@ body {
   background-color: var(--bgbrown);
 }
 
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
 h1 {
   font-family: var(--font);
   font-weight: 700;
@@ -658,10 +666,10 @@ button:hover {
 
 .btn-see-project {
   border: 1px solid #396df2;
-  padding: 7px;
+  padding: 5px;
   border-radius: 8px;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 200;
   text-transform: capitalize;
   font-family: Poppins, sans-serif;
   transition-duration: 0.4s;

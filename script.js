@@ -133,13 +133,15 @@ const displayModal = (j) => {
     <div class="description">${project_array[count].description}</div>
     <ul class="list-stack"> 
      ${listStackpop.join(' ')}
-    </ul>
-  </div>
-  
-  <div>
+     <div>
+     <br/><br/>
     <a href='https://ogiogiovictor.github.io/microverse_porfolio_project/' class="btn-see-project">See Live <i class="fa fa-external-link" aria-hidden="true"></i></a>
     <a href='https://github.com/ogiogiovictor' class="btn-see-project">See Source <i class="fa fa-github-square" aria-hidden="true"></i></a>
    </div>
+    </ul>
+  </div>
+  
+  
   </div>
   `
 
@@ -165,4 +167,34 @@ window.onclick = function(event) {
     }
 }
 
+
+/********************* FORM VALIDATION ****************************** */
+const form = document.getElementById('contactForm');
+const email = form.elements['email'];
+const fullname = document.querySelector('#fullname');
+const message = document.querySelector('#message');
+//const submit = document.querySelector('#form-btn');
+//Check the email if is in lowercase
+
+form.addEventListener('submit', function (e) {
+  // prevent the form from submitting
+  e.preventDefault();
+  if(email.value !== email.value.toLowerCase()){
+    document.querySelector('#errorMsg').innerHTML = "<span class='error'>Email must be in lowercase</span>";
+  }else if(!isEmailValid(email.value)){
+    document.querySelector('#errorMsg').innerHTML = "<span class='error'>Please enter a valid email</span>"
+  }
+
+  if (!isRequired(fullname.value)) {
+    document.querySelector('#errorMsg').innerHTML = "<span class='error'>Fullname cannot be blank</span>"
+  } 
+
+});
+
+const isRequired = value => value === '' ? false : true;
+
+const isEmailValid = (email) => {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+};
 
