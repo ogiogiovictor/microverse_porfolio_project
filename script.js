@@ -180,16 +180,26 @@ form.addEventListener('submit', function (e) {
   // prevent the form from submitting
   e.preventDefault();
   if(email.value !== email.value.toLowerCase()){
-    document.querySelector('#errorMsg').innerHTML = "<span class='error'>Email must be in lowercase</span>";
+    showMessage("Email must be in lowercase");
+    //document.querySelector('#errorMsg').innerHTML = "<span class='error'>Email must be in lowercase</span>";
   }else if(!isEmailValid(email.value)){
-    document.querySelector('#errorMsg').innerHTML = "<span class='error'>Please enter a valid email</span>"
+    showMessage("Please enter a valid email");
   }
 
   if (!isRequired(fullname.value)) {
-    document.querySelector('#errorMsg').innerHTML = "<span class='error'>Fullname cannot be blank</span>"
+    showMessage("Fullname cannot be blank")
+  } 
+  if (!isRequired(message.value)) {
+    showMessage("Fullname cannot be blank")
   } 
 
+  //If everything is ok submit form...
+
 });
+
+function showMessage(message){
+  return document.querySelector('#errorMsg').innerHTML = `<span class='error'>${message}</span>`;
+}
 
 const isRequired = value => value === '' ? false : true;
 
