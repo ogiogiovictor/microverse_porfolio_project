@@ -165,29 +165,53 @@ window.onclick = function(event) {
 
 /********************* FORM VALIDATION ****************************** */
 const form = document.getElementById('contactForm');
-const email = form.elements['email'];
-const fullname = document.querySelector('#fullname');
-const message = document.querySelector('#message');
+// const email = form.elements['email'];
+// const fullname = document.querySelector('#fullname');
+// const message = document.querySelector('#message');
+
+const formData = {
+  'email' : form.elements['email'],
+  'fullname' : document.querySelector('#fullname'),
+  'message' : document.querySelector('#message')
+}
 
 form.addEventListener('submit', function (e) {
-  if(email.value !== email.value.toLowerCase()){
+
+  if(formData['email'].value !== formData['email'].value.toLowerCase()){
     showMessage("Email must be in lowercase");
     e.preventDefault();
-  }else if(!isEmailValid(email.value)){
+  }else if(!isEmailValid(formData['email'].value)){
     showMessage("Please enter a valid email");
     e.preventDefault();
   }
 
-  if (!isRequired(fullname.value)) {
+  if (!isRequired(formData['fullname'].value)) {
     showMessage("Fullname cannot be blank")
     e.preventDefault();
   } 
-  if (!isRequired(message.value)) {
+  if (!isRequired(formData['message'].value)) {
     showMessage("Fullname cannot be blank")
     e.preventDefault();
   } 
 
   //If everything is ok submit form...
+  //Set local storage
+  localStorage.setItem('savedData', JSON.stringify(formData));
+
+   const iformData = JSON.parse(localStorage.getItem('savedData'));
+   form.elements['email'].value = iformData.email;
+   document.querySelector('#fullname') = iformData.fullname;
+   document.querySelector('#message') = iformData.message;
+
+  console.log(iformData);
+  e.preventDefault();
+  
+  // document.getElementById('name').value = formData['email'].value;
+  // document.getElementById('email').value = formData['fullname'].value;
+  // document.getElementById('text').value = formData['message'].value;
+
+
+  
 
 });
 
