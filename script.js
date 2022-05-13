@@ -168,12 +168,8 @@ const form = document.getElementById('contactForm');
 const email = form.elements['email'];
 const fullname = document.querySelector('#fullname');
 const message = document.querySelector('#message');
-//const submit = document.querySelector('#form-btn');
-//Check the email if is in lowercase
 
 form.addEventListener('submit', function (e) {
-  // prevent the form from submitting
-  //e.preventDefault();
   if(email.value !== email.value.toLowerCase()){
     showMessage("Email must be in lowercase");
     e.preventDefault();
