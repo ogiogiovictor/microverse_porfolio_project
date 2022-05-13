@@ -150,11 +150,6 @@ const displayModal = (j) => {
 // Get the <span> element that closes the modal
 var ebSpan = document.getElementsByClassName("close_modal")[0];
 
-// When the user clicks the button, open the modal 
-// ebBtn.onclick = function() {
-//     ebModal.style.display = "block";
-// }
-
 // When the user clicks on <span> (x), close the modal
 ebSpan.onclick = function() {
     ebModal.style.display = "none";
@@ -178,19 +173,22 @@ const message = document.querySelector('#message');
 
 form.addEventListener('submit', function (e) {
   // prevent the form from submitting
-  e.preventDefault();
+  //e.preventDefault();
   if(email.value !== email.value.toLowerCase()){
     showMessage("Email must be in lowercase");
-    //document.querySelector('#errorMsg').innerHTML = "<span class='error'>Email must be in lowercase</span>";
+    e.preventDefault();
   }else if(!isEmailValid(email.value)){
     showMessage("Please enter a valid email");
+    e.preventDefault();
   }
 
   if (!isRequired(fullname.value)) {
     showMessage("Fullname cannot be blank")
+    e.preventDefault();
   } 
   if (!isRequired(message.value)) {
     showMessage("Fullname cannot be blank")
+    e.preventDefault();
   } 
 
   //If everything is ok submit form...
