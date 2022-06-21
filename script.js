@@ -165,31 +165,53 @@ window.onclick = function(event) {
 
 /********************* FORM VALIDATION ****************************** */
 const form = document.getElementById('contactForm');
-const email = form.elements['email'];
-const fullname = document.querySelector('#fullname');
-const message = document.querySelector('#message');
 
 form.addEventListener('submit', function (e) {
-  if(email.value !== email.value.toLowerCase()){
+
+  let formData = {
+    'email' : form.elements['email'].value,
+    'fullname' : document.querySelector('#fullname').value,
+    'message' : document.querySelector('#message').value
+  }
+
+  if(formData['email'] !== formData['email'].toLowerCase()){
     showMessage("Email must be in lowercase");
     e.preventDefault();
-  }else if(!isEmailValid(email.value)){
+  }else if(!isEmailValid(formData['email'])){
     showMessage("Please enter a valid email");
     e.preventDefault();
   }
 
-  if (!isRequired(fullname.value)) {
+  if (!isRequired(formData['fullname'])) {
     showMessage("Fullname cannot be blank")
     e.preventDefault();
   } 
-  if (!isRequired(message.value)) {
+  if (!isRequired(formData['message'])) {
     showMessage("Fullname cannot be blank")
     e.preventDefault();
   } 
 
   //If everything is ok submit form...
+  //Set local storage
+  localStorage.setItem('savedData', JSON.stringify(formData));
+
+   //Get te keys and assign values
+   const iformData = JSON.parse(localStorage.getItem('savedData'));
+   form.elements['email'].value = iformData.email;
+   document.querySelector('#fullname').value = iformData.fullname;
+   document.querySelector('#message').value = iformData.message;
 
 });
+
+window.onload = () => {
+  let savedStoredData = JSON.parse(localStorage.getItem('savedData'));
+  // Check if the form data object is found on localStorage
+  if (savedStoredData) {
+    document.querySelector('#fullname').value = savedStoredData.fullname;
+    document.querySelector('#message').value = savedStoredData.message;
+    document.querySelector('#email').value = savedStoredData.email;
+  }
+}
 
 function showMessage(message){
   return document.querySelector('#errorMsg').innerHTML = `<span class='error'>${message}</span>`;

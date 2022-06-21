@@ -3,8 +3,7 @@ Microverse Porfolio Project
 This project is a portfolio project design
 
 # About Project
-The project is a portfolio project about a Software developer and is products, Its built with latest 
-CSS technologies like flexbox.
+A simple portfolio project design  build with Flexbox and Grid System to showcase developers products and implementation of Formspree for capturing
 
 # Built With 
 - HTML
