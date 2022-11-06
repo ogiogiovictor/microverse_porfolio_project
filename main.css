@@ -755,6 +755,16 @@ button:hover {
     padding-right: 20px;
   }
 
+  .main-slide h1 {
+    font-size: 40px;
+  }
+
+  .main-slide h1, h2{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .main-header {
     margin-left: 5px;
     margin-right: 5px;
