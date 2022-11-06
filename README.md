@@ -2,7 +2,7 @@
 This project is a portfolio project design
 
 # About Project
-A simple portfolio project design  build with Flexbox and Grid System to showcase developers products and implementation of Formspree for capturing
+A simple portfolio project design  build with Flexbox and Grid System to showcase developers products and implementation of Formspree for capturing.
 
 # Built With 
 - HTML

@@ -678,10 +678,10 @@ button:hover {
   color: #6070ff;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  /* @media only screen and (max-width: 600px) { */
+/* @media only screen and (min-width: 300px) and (max-width: 600px) { */
+  @media only screen and (max-width: 600px) { 
   .btn-see-project {
-    border: 1px solid #396df2;
+    border: 1px solid hsl(223, 88%, 59%);
     padding: 5px;
     border-radius: 8px;
     font-size: 12px;
@@ -762,6 +762,7 @@ button:hover {
 
   .bar-bar .icon {
     display: inline;
+    font-size: 20px;
   }
 
   .bar-bar ul {
