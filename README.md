@@ -1,5 +1,4 @@
-# Microverse_Hello_Project
-Microverse Porfolio Project
+# My Portfolio Project
 This project is a portfolio project design
 
 # About Project
@@ -28,8 +27,8 @@ The Webpage is now deployed using github pages. See url link below:
 
 # Authors
 - GitHub: @ogiogiovictor
--Twitter: [Ogiogio Victor](https://twitter.com/a0df623fb9d9482)
--LinkedIn:  [Ogiogio Victor](https://www.linkedin.com/in/ogiogio-victor-a096a0181/)
+- Twitter: [Ogiogio Victor](https://twitter.com/a0df623fb9d9482)
+- LinkedIn:  [Ogiogio Victor](https://www.linkedin.com/in/ogiogio-victor-a096a0181/)
 
 👤 **Ulises Largaespada**
 
@@ -38,9 +37,9 @@ The Webpage is now deployed using github pages. See url link below:
 
 👤 **David Verde**
 
-GitHub: https://github.com/Unyielding1
-Twitter: https://twitter.com/UnyieldingOne
-LinkedIn: https://www.linkedin.com/in/david-verde-3349b114b/
+- GitHub: https://github.com/Unyielding1
+- Twitter: https://twitter.com/UnyieldingOne
+- LinkedIn: https://www.linkedin.com/in/david-verde-3349b114b/
 
 
 # 🤝 Contributing
